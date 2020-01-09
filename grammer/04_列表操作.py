@@ -32,7 +32,7 @@ my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
 print(friend_foods)
 
-# 使用切片可以完整复制一份列表，并分别对列表进行操作
+# 使用切片可以完整复制一份列表，并分别对列表进行操作 仅通过变量赋值属于浅拷贝，切片属于深拷贝
 my_foods.append('cannoli')
 friend_foods.append('ice cream')
 print("My favorite foods are:")
@@ -40,3 +40,16 @@ print(my_foods)
 print("\nMy friend's favorite foods are:")
 print(friend_foods)
 
+# 4.5元组操作 不可变的列表被称为元组
+# 元组 使用圆括号而不是方括号来标识
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+
+# 遍历元组中所有数值
+for dimension in dimensions:
+    print(dimension)
+# 不能修改元组变量，但可以给元组变量重新赋值
+dimensions = (1.2, 2.3)
+for dimension in dimensions:
+    print(dimension)
