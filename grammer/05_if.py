@@ -20,4 +20,9 @@ print(age0 >= 21 or age1 >= 21)
 # elif:
 # else:
 # Python并不要求if-elif 结构后面必须有else 代码块。在有些情况下，else 代码块很有用；而在其他一些情况下，使用一条elif 语句来处理特定的情形更清晰
-# 5.4
+pizza = []
+# if直接判断列表是否为空
+if pizza:
+    print("pizza不为空")
+else:
+    print("pizza是空的")
